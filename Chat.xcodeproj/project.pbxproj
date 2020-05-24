@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2A8FB5832479B6A100A54A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5822479B6A100A54A9C /* AppDelegate.swift */; };
 		2A8FB5852479B6A100A54A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */; };
-		2A8FB5872479B6A100A54A9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5862479B6A100A54A9C /* ViewController.swift */; };
+		2A8FB5872479B6A100A54A9C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5862479B6A100A54A9C /* ChatViewController.swift */; };
 		2A8FB58A2479B6A100A54A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8FB5882479B6A100A54A9C /* Main.storyboard */; };
 		2A8FB58C2479B6A200A54A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8FB58B2479B6A200A54A9C /* Assets.xcassets */; };
 		2A8FB58F2479B6A200A54A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8FB58D2479B6A200A54A9C /* LaunchScreen.storyboard */; };
+		2A8FB5972479D53200A54A9C /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5962479D53200A54A9C /* RoundedCornerView.swift */; };
+		2AF8541D247A28AF0029144B /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8541C247A28AF0029144B /* LoginRegisterViewController.swift */; };
+		2AF8541F247A28C80029144B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8541E247A28C80029144B /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A8FB57F2479B6A100A54A9C /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8FB5822479B6A100A54A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A8FB5862479B6A100A54A9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A8FB5862479B6A100A54A9C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2A8FB5892479B6A100A54A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A8FB58B2479B6A200A54A9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8FB58E2479B6A200A54A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A8FB5902479B6A200A54A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8FB5962479D53200A54A9C /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		2AF8541C247A28AF0029144B /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		2AF8541E247A28C80029144B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				2A8FB5822479B6A100A54A9C /* AppDelegate.swift */,
 				2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */,
-				2A8FB5862479B6A100A54A9C /* ViewController.swift */,
-				2A8FB5882479B6A100A54A9C /* Main.storyboard */,
+				2AF8541B247A28630029144B /* Controller */,
+				2AF8541A247A285C0029144B /* View */,
 				2A8FB58B2479B6A200A54A9C /* Assets.xcassets */,
 				2A8FB58D2479B6A200A54A9C /* LaunchScreen.storyboard */,
 				2A8FB5902479B6A200A54A9C /* Info.plist */,
+				2A8FB5982479D53900A54A9C /* Utils */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		2A8FB5982479D53900A54A9C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FB5962479D53200A54A9C /* RoundedCornerView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2AF8541A247A285C0029144B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FB5882479B6A100A54A9C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2AF8541B247A28630029144B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A8FB5862479B6A100A54A9C /* ChatViewController.swift */,
+				2AF8541C247A28AF0029144B /* LoginRegisterViewController.swift */,
+				2AF8541E247A28C80029144B /* WelcomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A8FB5872479B6A100A54A9C /* ViewController.swift in Sources */,
+				2A8FB5872479B6A100A54A9C /* ChatViewController.swift in Sources */,
 				2A8FB5832479B6A100A54A9C /* AppDelegate.swift in Sources */,
 				2A8FB5852479B6A100A54A9C /* SceneDelegate.swift in Sources */,
+				2AF8541F247A28C80029144B /* WelcomeViewController.swift in Sources */,
+				2AF8541D247A28AF0029144B /* LoginRegisterViewController.swift in Sources */,
+				2A8FB5972479D53200A54A9C /* RoundedCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emerdeveloper.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.emerdeveloper.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

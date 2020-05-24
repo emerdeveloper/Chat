@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Chat
 //
 //  Created by Emerson Javid Gonzalez Morales on 23/05/20.
@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginRegisterViewController: UIViewController {
 
+    @IBOutlet weak var textViewEmail: UITextField!
+    @IBOutlet weak var textViewPassword: UITextField!
+    var isLogin: Bool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func sendPressed(_ sender: UIButton) {
+    }
 }
-
