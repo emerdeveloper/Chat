@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h2C-SW-EWX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -139,10 +139,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5MD-tw-2nT"/>
+                    <connections>
+                        <segue destination="2er-Px-Hut" kind="show" identifier="goToRegisterORLogin" id="DSx-Z7-Oyw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="136.60714285714286"/>
         </scene>
         <!--Login Register View Controller-->
         <scene sceneID="420-PT-5iG">
@@ -216,6 +220,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sendPressed:" destination="2er-Px-Hut" eventType="touchUpInside" id="5hX-tt-Xck"/>
+                                    <segue destination="V4f-lE-JQJ" kind="show" id="NkJ-Y9-LKV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -238,6 +243,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gam-51-CN3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8kN-Ek-xdw"/>
                     <connections>
                         <outlet property="textViewEmail" destination="bSv-1I-vVH" id="wMv-cC-7iC"/>
                         <outlet property="textViewPassword" destination="rpU-Qx-TnZ" id="c0k-Tr-DbH"/>
@@ -245,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uho-jY-ibl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149" y="137"/>
+            <point key="canvasLocation" x="2057.971014492754" y="136.60714285714286"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="EfF-z7-OVx">
@@ -297,7 +303,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="myM-YP-21H">
-                                <rect key="frame" x="0.0" y="44" width="414" height="752"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gBJ-u3-FUe">
@@ -327,6 +333,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2HS-NG-1dz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IgM-cT-bgJ"/>
                     <connections>
                         <outlet property="tableView" destination="myM-YP-21H" id="7N9-L2-VtS"/>
                         <outlet property="textViewMessage" destination="He7-yp-mvL" id="3pM-2m-WY4"/>
@@ -334,7 +341,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYl-p4-Obl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="122.54464285714285"/>
+            <point key="canvasLocation" x="2868.115942028986" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cB8-Kk-WgY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h2C-SW-EWX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cnm-Hu-SYw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RVb-Gq-pPH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNe-JO-eQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
         </scene>
     </scenes>
     <resources>
