@@ -89,6 +89,7 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+Chat/GoogleService-Info.plist
 
 
 # Created by https://www.gitignore.io/api/swift,cocoapods

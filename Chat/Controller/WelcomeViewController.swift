@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.isHidden = true
     }
     @IBAction func sendPressed(_ sender: UIButton) {
         if let titleLabel = sender.titleLabel?.text {
