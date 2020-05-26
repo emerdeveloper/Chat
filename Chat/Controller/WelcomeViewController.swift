@@ -12,14 +12,22 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var textViewMessage: UITextField!
+    var isRegister: Bool?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     @IBAction func sendPressed(_ sender: UIButton) {
+        if let titleLabel = sender.titleLabel?.text {
+            isRegister = titleLabel == "Register"
+            self.performSegue(withIdentifier: "goToRegisterORLogin", sender: self)
+        }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! LoginRegisterViewController
+        vc.isRegister = isRegister
+    }
 }

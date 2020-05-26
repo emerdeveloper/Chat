@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chat View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ChatViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,14 +75,16 @@
                                     <constraint firstAttribute="height" constant="51" id="pIp-Ua-QWp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Register"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.1843137255" green="0.23529411759999999" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooa-sH-8Yy"/>
+                                    <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdR-jh-nKa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hB-NJ-8qD">
@@ -92,14 +94,16 @@
                                     <constraint firstAttribute="height" constant="51" id="kSi-cj-li1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.1843137255" green="0.23529411759999999" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsA-ca-9Fn"/>
+                                    <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSi-HV-NaR"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble.left.and.bubble.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-uG-L6P" userLabel="image center">
@@ -166,7 +170,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="97"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bSv-1I-vVH">
-                                        <rect key="frame" x="48" y="17" width="58.5" height="31.5"/>
+                                        <rect key="frame" x="48" y="17" width="278" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -175,7 +179,7 @@
                                     <constraint firstItem="bSv-1I-vVH" firstAttribute="top" secondItem="Frg-5H-mXL" secondAttribute="top" constant="17" id="B2Q-D5-8TD"/>
                                     <constraint firstAttribute="height" constant="117" id="IWo-J1-vBc"/>
                                     <constraint firstAttribute="trailing" secondItem="F74-Aa-Y6G" secondAttribute="trailing" id="LVN-mG-YZk"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bSv-1I-vVH" secondAttribute="trailing" constant="20" symbolic="YES" id="Lfw-xq-0SL"/>
+                                    <constraint firstAttribute="trailing" secondItem="bSv-1I-vVH" secondAttribute="trailing" constant="48" id="Lfw-xq-0SL"/>
                                     <constraint firstItem="F74-Aa-Y6G" firstAttribute="leading" secondItem="Frg-5H-mXL" secondAttribute="leading" id="aWZ-x9-wGs"/>
                                     <constraint firstAttribute="bottom" secondItem="F74-Aa-Y6G" secondAttribute="bottom" constant="20" id="inA-gb-SdN"/>
                                     <constraint firstItem="bSv-1I-vVH" firstAttribute="leading" secondItem="Frg-5H-mXL" secondAttribute="leading" constant="48" id="kcX-AY-ZsS"/>
@@ -189,9 +193,9 @@
                                         <rect key="frame" x="0.0" y="20" width="374" height="110"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rpU-Qx-TnZ">
-                                        <rect key="frame" x="48" y="42" width="104.5" height="31.5"/>
+                                        <rect key="frame" x="48" y="42" width="278" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -199,7 +203,7 @@
                                     <constraint firstAttribute="height" constant="150" id="0xH-U2-rSX"/>
                                     <constraint firstItem="duU-KW-TcN" firstAttribute="top" secondItem="RG2-Vf-GQl" secondAttribute="top" constant="20" id="8cR-Jg-ccs"/>
                                     <constraint firstItem="rpU-Qx-TnZ" firstAttribute="top" secondItem="RG2-Vf-GQl" secondAttribute="top" constant="42" id="IaJ-2c-jqE"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rpU-Qx-TnZ" secondAttribute="trailing" constant="20" symbolic="YES" id="KQk-Go-hiS"/>
+                                    <constraint firstAttribute="trailing" secondItem="rpU-Qx-TnZ" secondAttribute="trailing" constant="48" id="KQk-Go-hiS"/>
                                     <constraint firstAttribute="bottom" secondItem="duU-KW-TcN" secondAttribute="bottom" constant="20" id="UgD-8B-RmK"/>
                                     <constraint firstAttribute="trailing" secondItem="duU-KW-TcN" secondAttribute="trailing" id="mTQ-fT-OWB"/>
                                     <constraint firstItem="duU-KW-TcN" firstAttribute="leading" secondItem="RG2-Vf-GQl" secondAttribute="leading" id="xsK-ht-x0H"/>
@@ -212,7 +216,9 @@
                                     <constraint firstAttribute="height" constant="51" id="l3V-h4-Cq3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Register"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.1843137255" green="0.23529411759999999" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="25"/>
@@ -220,7 +226,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="sendPressed:" destination="2er-Px-Hut" eventType="touchUpInside" id="5hX-tt-Xck"/>
-                                    <segue destination="V4f-lE-JQJ" kind="show" id="NkJ-Y9-LKV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,18 +250,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="8kN-Ek-xdw"/>
                     <connections>
+                        <outlet property="buttonSend" destination="1oS-EW-rWR" id="Ala-lt-j6K"/>
                         <outlet property="textViewEmail" destination="bSv-1I-vVH" id="wMv-cC-7iC"/>
                         <outlet property="textViewPassword" destination="rpU-Qx-TnZ" id="c0k-Tr-DbH"/>
+                        <segue destination="V4f-lE-JQJ" kind="show" identifier="goToChat" id="R0t-75-T9D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uho-jY-ibl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2057.971014492754" y="136.60714285714286"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="EfF-z7-OVx">
             <objects>
-                <viewController id="V4f-lE-JQJ" customClass="WelcomeViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="V4f-lE-JQJ" customClass="ChatViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yGV-ta-17T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +294,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                                 <state key="normal" image="paperplane.fill" catalog="system"/>
                                                 <connections>
-                                                    <action selector="sendPressed:" destination="V4f-lE-JQJ" eventType="touchUpInside" id="JfL-nX-W7Q"/>
+                                                    <action selector="sendPressed:" destination="V4f-lE-JQJ" eventType="touchUpInside" id="bKO-oQ-Ldj"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -306,7 +313,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gBJ-u3-FUe">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="gBJ-u3-FUe">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gBJ-u3-FUe" id="bgK-j9-3fu">
@@ -333,10 +340,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2HS-NG-1dz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IgM-cT-bgJ"/>
+                    <navigationItem key="navigationItem" id="IgM-cT-bgJ">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Ddi-qi-AAn">
+                            <connections>
+                                <action selector="logOutPressed:" destination="V4f-lE-JQJ" id="Iwk-zS-yR5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="myM-YP-21H" id="7N9-L2-VtS"/>
-                        <outlet property="textViewMessage" destination="He7-yp-mvL" id="3pM-2m-WY4"/>
+                        <outlet property="tableView" destination="myM-YP-21H" id="yDu-ce-gyh"/>
+                        <outlet property="textFieldMessage" destination="He7-yp-mvL" id="qnk-se-sLD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYl-p4-Obl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
