@@ -20,7 +20,7 @@ class LoginRegisterViewController: UIViewController {
         super.viewDidLoad()
 
         if !isRegister! {
-            buttonSend.setTitle("Login", for: .normal)
+            buttonSend.setTitle(K.buttonLogin, for: .normal)
         }
     }
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -38,7 +38,7 @@ class LoginRegisterViewController: UIViewController {
             if let e = error {
                 print(e)
             } else {
-                self.performSegue(withIdentifier: "goToChat", sender: self)
+                self.performSegue(withIdentifier: K.chatSegue, sender: self)
             }
         }
     }
@@ -50,7 +50,7 @@ class LoginRegisterViewController: UIViewController {
             } else {
                 print(authResult!)
                 print(authResult!.user.displayName!)
-                self.performSegue(withIdentifier: "goToChat", sender: self)
+                self.performSegue(withIdentifier: K.chatSegue, sender: self)
             }
         }
     }

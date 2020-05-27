@@ -21,8 +21,8 @@ class WelcomeViewController: UIViewController {
     }
     @IBAction func sendPressed(_ sender: UIButton) {
         if let titleLabel = sender.titleLabel?.text {
-            isRegister = titleLabel == "Register"
-            self.performSegue(withIdentifier: "goToRegisterORLogin", sender: self)
+            isRegister = titleLabel == K.register
+            self.performSegue(withIdentifier: K.registerORLoginSegue, sender: self)
         }
     }
     
