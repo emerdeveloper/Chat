@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A575296247F6F25001ADC6F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A575294247F6F25001ADC6F /* MessageCell.swift */; };
+		2A575297247F6F25001ADC6F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A575295247F6F25001ADC6F /* MessageCell.xib */; };
 		2A8FB5832479B6A100A54A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5822479B6A100A54A9C /* AppDelegate.swift */; };
 		2A8FB5852479B6A100A54A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */; };
 		2A8FB5872479B6A100A54A9C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5862479B6A100A54A9C /* ChatViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A575294247F6F25001ADC6F /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		2A575295247F6F25001ADC6F /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		2A8FB57F2479B6A100A54A9C /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8FB5822479B6A100A54A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				2A8FB5882479B6A100A54A9C /* Main.storyboard */,
+				2A575294247F6F25001ADC6F /* MessageCell.swift */,
+				2A575295247F6F25001ADC6F /* MessageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A575297247F6F25001ADC6F /* MessageCell.xib in Resources */,
 				2A8FB58F2479B6A200A54A9C /* LaunchScreen.storyboard in Resources */,
 				2ADB794F247B49670073DB72 /* GoogleService-Info.plist in Resources */,
 				2A8FB58C2479B6A200A54A9C /* Assets.xcassets in Resources */,
@@ -265,6 +272,7 @@
 				2AE831CA247E156E00564B6F /* Message.swift in Sources */,
 				2AF8541D247A28AF0029144B /* LoginRegisterViewController.swift in Sources */,
 				2A8FB5972479D53200A54A9C /* RoundedCornerView.swift in Sources */,
+				2A575296247F6F25001ADC6F /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

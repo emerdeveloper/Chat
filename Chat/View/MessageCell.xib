@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="101" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-eT-g1k">
+                        <rect key="frame" x="10" y="10" width="323" height="81"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wax-SP-16A">
+                                <rect key="frame" x="0.0" y="0.0" width="263" height="81"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola, ¿Cómo estás? Este es un texto muy largo, por esto estará en varias lineas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-jA-tSv">
+                                        <rect key="frame" x="10" y="10" width="243" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.83921568629999999" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Z0J-jA-tSv" secondAttribute="trailing" constant="10" id="Lww-pA-BmD"/>
+                                    <constraint firstItem="Z0J-jA-tSv" firstAttribute="leading" secondItem="wax-SP-16A" secondAttribute="leading" constant="10" id="dof-Fe-hI9"/>
+                                    <constraint firstItem="Z0J-jA-tSv" firstAttribute="top" secondItem="wax-SP-16A" secondAttribute="top" constant="10" id="e0k-mS-c8N"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z0J-jA-tSv" secondAttribute="bottom" constant="10" id="glD-Pb-cd5"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="y.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yxe-tN-1CO">
+                                <rect key="frame" x="283" y="0.5" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QKN-PV-LlU"/>
+                                    <constraint firstAttribute="width" constant="40" id="aVC-9T-P6Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tAX-eT-g1k" secondAttribute="trailing" constant="10" id="B58-Vy-OPw"/>
+                    <constraint firstItem="tAX-eT-g1k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="U69-IP-Vxp"/>
+                    <constraint firstAttribute="bottom" secondItem="tAX-eT-g1k" secondAttribute="bottom" constant="10" id="Um1-13-Tek"/>
+                    <constraint firstItem="tAX-eT-g1k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="q6x-WG-Vvx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageUser" destination="Yxe-tN-1CO" id="rDA-xR-Hvx"/>
+                <outlet property="labelMessage" destination="Z0J-jA-tSv" id="vXl-k3-BeP"/>
+                <outlet property="viewContainer" destination="wax-SP-16A" id="qyV-dt-ebt"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="160.37946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="y.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

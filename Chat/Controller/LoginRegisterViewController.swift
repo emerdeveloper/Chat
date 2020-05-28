@@ -19,6 +19,7 @@ class LoginRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.navigationBar.isHidden = false
         if !isRegister! {
             buttonSend.setTitle(K.buttonLogin, for: .normal)
         }

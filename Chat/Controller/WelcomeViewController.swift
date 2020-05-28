@@ -19,12 +19,14 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
     }
-    @IBAction func sendPressed(_ sender: UIButton) {
+    
+    @IBAction func onSendPressed(_ sender: UIButton) {
         if let titleLabel = sender.titleLabel?.text {
             isRegister = titleLabel == K.register
             self.performSegue(withIdentifier: K.registerORLoginSegue, sender: self)
         }
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! LoginRegisterViewController
