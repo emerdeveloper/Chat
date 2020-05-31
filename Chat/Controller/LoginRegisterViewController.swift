@@ -18,6 +18,7 @@ class LoginRegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
 
         navigationController?.navigationBar.isHidden = false
         if !isRegister! {

@@ -19,6 +19,8 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+        
         title = K.appName
         tableView.dataSource = self
         navigationItem.hidesBackButton = true
@@ -73,7 +75,7 @@ class ChatViewController: UIViewController {
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                         let index = IndexPath(row: self.messages.count - 1, section: 0)
-                        self.tableView.scrollToRow(at: index, at: .top, animated: true)
+                        self.tableView.scrollToRow(at: index, at: .top, animated: false)
                     }
                 }
             }

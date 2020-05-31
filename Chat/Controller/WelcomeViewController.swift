@@ -21,6 +21,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
     }
     
     override func viewWillDisappear(_ animated: Bool) {
