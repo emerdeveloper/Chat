@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A575296247F6F25001ADC6F /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A575294247F6F25001ADC6F /* MessageCell.swift */; };
 		2A575297247F6F25001ADC6F /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A575295247F6F25001ADC6F /* MessageCell.xib */; };
+		2A87774D2484473900C144B3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87774C2484473900C144B3 /* UIColor.swift */; };
 		2A8FB5832479B6A100A54A9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5822479B6A100A54A9C /* AppDelegate.swift */; };
 		2A8FB5852479B6A100A54A9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */; };
 		2A8FB5872479B6A100A54A9C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FB5862479B6A100A54A9C /* ChatViewController.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		2A575294247F6F25001ADC6F /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2A575295247F6F25001ADC6F /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		2A87774C2484473900C144B3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		2A8FB57F2479B6A100A54A9C /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8FB5822479B6A100A54A9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8FB5842479B6A100A54A9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				2AE831C6247E0F4600564B6F /* K.swift */,
 				2A8FB5962479D53200A54A9C /* RoundedCornerView.swift */,
+				2A87774C2484473900C144B3 /* UIColor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				2AF8541D247A28AF0029144B /* LoginRegisterViewController.swift in Sources */,
 				2A8FB5972479D53200A54A9C /* RoundedCornerView.swift in Sources */,
 				2A575296247F6F25001ADC6F /* MessageCell.swift in Sources */,
+				2A87774D2484473900C144B3 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

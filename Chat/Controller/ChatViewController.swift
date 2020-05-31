@@ -15,11 +15,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var textFieldMessage: UITextField!
     let db = Firestore.firestore()
     
-    var messages: [Message] = [
-            Message(sender: "1@2.com", object: "Hola"),
-            Message(sender: "w@q.com", object: "¿Cómo estás?"),
-            Message(sender: "1@2.com", object: "Excelente")
-    ]
+    var messages: [Message] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +40,7 @@ class ChatViewController: UIViewController {
                     print("Document added")
                 }
             }
+            textFieldMessage.text = ""
         }
     }
     
@@ -75,6 +72,8 @@ class ChatViewController: UIViewController {
                     }
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
+                        let index = IndexPath(row: self.messages.count - 1, section: 0)
+                        self.tableView.scrollToRow(at: index, at: .top, animated: true)
                     }
                 }
             }
@@ -88,8 +87,20 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-        cell.labelMessage.text = messages[indexPath.row].object
+        cell.labelMessage.text = message.object
+        
+        if message.sender == Auth.auth().currentUser?.email {
+            cell.imageCurrentUser.isHidden = false
+            cell.imageUser.isHidden = true
+            cell.viewContainer.backgroundColor = UIColor(hex: "#F5E1B7")
+        } else {
+            cell.imageCurrentUser.isHidden = true
+            cell.imageUser.isHidden = false
+            cell.viewContainer.backgroundColor = UIColor(hex: "#F7D698")
+        }
+        
         return cell
     }
 }
