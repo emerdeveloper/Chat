@@ -11,7 +11,7 @@ Applying the concepts:
 * Custom views using .xib files
 
 
-# Funcinality
+# Functionality
 A APP Chat is a basic in real time using different devices. 
 Use Firestore to send and receive messages in real time, and use Firebase Authentication to access to chat.
 
